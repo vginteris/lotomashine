@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<div class="container">
+		<h2>Loto mashine</h2>
+		<div id="allnumberrow" class="row">
+		</div>
+		<div class="row" >
+			<div id="luckynumber" class="col-4 number">X</div>
+			<div id="gameover" class="col-4 number">9 left</div>
+		</div>
+		<div class="row" >
+			<div id="start" class="col-4 number" onclick="getYour9LuckyNumbers()">Start</div>
+			<div id="GO" class="col-4 number" onclick="getOneLuckyNumber()">Go</div>
+		</div>
+		<h3>Lucky ticket numbers</h3>
+		<div class="row" id="lucky9number">
+			
+		</div>
+
+		<h3>Lucky numbers</h3>
+		<div id="loto_numbers" class="row"></div>
+		<div id="winner"></div>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+		<script type="text/javascript" src="skriptas.js"></script>
+	</body>
+	</html>

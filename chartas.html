@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<button class="btn btn-warning" style="margin: 5px" onclick="all_players()">All players</button>
+			<button class="btn btn-warning" style="margin: 5px" onclick="top_wins()">Top wins</button>
+			<button class="btn btn-warning" style="margin: 5px" onclick="top_games()">Top Games</button>
+			<button class="btn btn-warning" style="margin: 5px" onclick="show_stats()">Stats</button>
+			<div class="input-group">
+				<label for="username">Username</label>
+				<input type="text" id="usernameid"  name="username_input">
+				<button class="btn btn-warning" onclick="show_username()">Ok</button>
+			</div>
+
+		</div>
+		<div style="width: 80%; margin: auto;">
+			<canvas id="myChart"></canvas>
+		</div>
+	</div>
+	<div id="mask" class="container">
+		<div class="row" id="knopke">
+			<input type="text" name="email" placeholder="Email">
+			<input type="text" name="Asmens kodas" placeholder="Asmens kodas">
+			<button onclick="turn_off()" class="btn">Start game</button>
+
+		</div>
+	</div>
+
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script type="text/javascript" src="chart.js"></script>
+</body>
+</html>
